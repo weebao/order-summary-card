@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700,900');
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      font-family: "Red Hat Display", sans-serif;
+      background-image: url("images/pattern-background-desktop.svg");
+      
+      margin: 0;
+      font-size: 16px;
+
+      --pale-blue: hsl(225, 100%, 94%);
+      --bright-blue: hsl(245, 75%, 52%);
+      --bright-blue-hover: hsl(245, 71%, 66%);
+      --bright-blue-hover-shadow: hsla(245, 71%, 66%, 0.308);
+      --very-pale-blue: hsl(225, 100%, 98%);
+      --desaturated-blue: hsl(224, 23%, 55%);
+      --dark-blue: hsl(223, 47%, 23%);
+    }
+    
+    @media screen and (max-width: 376px) {
+      .subscription {
+        background-color: white;
+        border-radius: 1rem;
+
+        width: 20rem;
+
+        box-shadow: 0 1rem 1rem 0 rgba(31, 47, 86, 0.103);
+
+        text-align: center;
+      }
+
+      .subscription-text {
+        padding: 0rem 1.5rem 0.5rem 1.5rem;
+      }
+    }
+
+    @media screen and (min-width: 376px) and (max-width: 1440px) {
+      .subscription {
+        background-color: white;
+        border-radius: 1rem;
+
+        width: 25rem;
+
+        box-shadow: 0 1rem 1rem 0 rgba(31, 47, 86, 0.103);
+
+        text-align: center;
+      }
+
+      .subscription-text {
+        padding: 1rem 2.5rem 1rem 2.5rem;
+      }
+    }
+
+    .subscription > img {
+      width: 100%;
+      height: 100%;
+
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+
+    .subscription-field {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+      padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+      border-radius: 1rem;
+      background-color: hsl(225, 100%, 98%);
+    }
+
+    .subscription-field a {
+      font-weight: 700;
+      color: var(--bright-blue);
+    }
+
+    .subscription-field a:hover {
+      color: var(--bright-blue-hover);
+      text-decoration: none;
+    }
+
+    .subscription-plan {
+      text-align: left;
+      flex-grow: 1.25;
+      display: inline-block;
+
+      padding: 0 1rem 0 1rem;
+    }
+
+    .button {
+      border-radius: 1rem;
+      background-color: var(--bright-blue);
+      color: white;
+
+      margin: 2rem 0 1rem 0;
+      padding: 1rem 0 1rem 0;
+
+      font-weight: 700;
+      font-size: inherit;
+
+      box-shadow: 0 1rem 1rem 0 var(--bright-blue-hover-shadow);
+    }
+
+    .button:hover {
+      border: none;
+      cursor: pointer;
+      background-color: var(--bright-blue-hover);
+    }
+
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .link-text {
+      color: var(--desaturated-blue);
+      cursor: pointer;
+    }
+
+    .link-text:hover {
+      color: black;
+    }
+
+    h1, h2, h4 {
+      font-weight: 900;
+      color:var(--dark-blue);
+    }
+
+    p {
+      color:var(--desaturated-blue);
+      font-weight: 500;
+    }
+
+    .no-space-top {
+      margin-top: 0;
+    }
+
+    .no-space-bottom {
+      margin-bottom: 0;
+    }
+
+    .little-space-top {
+      margin-top: 3px;
+    }
+
+    .little-space-bottom {
+      margin-top: 3px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="subscription centered">
+    <img class="img" src="images/illustration-hero.svg">
+    <div class="subscription-text">
+      <h2>Order Summary</h2>   
+
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+    device anywhere you like!</p>
+
+      <div class="subscription-field">
+        <img src="images/icon-music.svg">
+
+        <div class="subscription-plan">
+          <h4 class="no-space-bottom">Annual Plan</h4>
+          <p class="little-space-top">$59.99/year</p>
+        </div>
+
+        <a href="#">Change</a>
+      </div>
+
+      <div class="button">
+        Proceed to Payment
+      </div>
+      <h4 class="no-space-top link-text">Cancel Order</h4>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Bao Dang</a>.
+  </div>
+</body>
+</html>
