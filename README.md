@@ -14,7 +14,7 @@
 
 ### Screenshot
 
-![Order Summary Component](./images/screenshot.png)
+![Order Summary Component](./images/screenshot.jpg)
 
 ### Links
 
